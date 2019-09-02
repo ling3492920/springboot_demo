@@ -17,4 +17,8 @@ public class HelloController {
         model.addAttribute("sayhi","~~~~测试修改~~~~");
         return "hello";
     }
+    @GetMapping("/")
+    public String index(){
+        return "index";
+    }
 }
